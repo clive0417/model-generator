@@ -1,0 +1,49 @@
+{
+  "name": "clive0417/model-generator",
+  "description": "A model generator",
+  "license": "MIT",
+  "keywords": [
+    "model",
+    "generator"
+  ],
+  "type": "library",
+  "authors": [
+    {
+      "name": "",
+      "email": ""
+    }
+  ],
+  "require": {
+    "php": ">=7.2",
+    "laravel/framework": "^8.75"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^4.0|^5.0|^6.0",
+    "phpunit/phpunit": "^8.4|^9.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Clive0417\\ModelGenerator\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Clive0417\\ModelGenerator\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "phpunit": "phpunit"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Clive0417\\ModelGenerator\\ModelGenerateServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true
+  }
+}

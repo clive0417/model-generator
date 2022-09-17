@@ -39,3 +39,4 @@ instead of using the issue tracker.
 This package is bootstrapped with the help of
 [melihovv/laravel-package-generator](https://github.com/melihovv/laravel-package-generator).
 # model-generator
+# model-generator
