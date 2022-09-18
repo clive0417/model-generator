@@ -60,6 +60,7 @@ class ModelGenerateCommand extends Command
             foreach ($table->getColumns() as $column_name => $Column) {
 
                 //特殊欄位判斷 switch()
+                // TODO step 4 設定各欄位 需添加的 trait/use...
                 switch ($Column->getName()) {
                     case 'deleted_at':
                         $EntityCreator->addTrait(new TraitModel('SoftDeletes'));
